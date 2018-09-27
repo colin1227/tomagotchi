@@ -1,5 +1,5 @@
 #top {
-	display: inline-flex;
+	display: flex;
 	width: 100%;
 	height: 65px;
 	justify-content: center;
@@ -7,6 +7,12 @@
 	border-color: grey;
 	border-width: 2px;
 	align-items: flex-start;
+	flex-wrap: wrap;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	background-color: grey;
+
 }
 
 /*#bottom {
@@ -36,5 +42,143 @@
 	width: 100%;
 	height: 65px;
 	position: absolute;
+	z-index: 2;
 	bottom: 0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	background-color: grey;
+}
+#tommy {
+	height: 100px;
+	width: 75px;
+	display: inline-block;
+	margin-top: 150px;
+}
+.food {
+	display: inline-flex;
+	position: relative;
+	justify-content: center;
+	margin-top: 180px;
+	/*margin-right: 240px;*/
+    height: 65px;
+    width: 35px;
+    float: right;
+	}
+
+
+@keyframes AlvAwkAni {
+    0% {
+     left: 0%;
+    }
+    15% {
+     transform: rotate(35deg);
+     left:  92%;
+    }
+    18%{
+      transform: rotate(15deg);
+     left:  93%;
+    }
+    19%{
+      transform: rotate(35deg);
+     left:  93%;
+    }
+    20%{
+      transform: rotate(25deg);
+     left:  91%;
+    }
+    22%{
+      transform: rotate(35deg);
+     left:  92%;
+    }
+    24%{
+      transform: rotate(25deg);
+     left:  93%;
+    }
+    25%{
+    	transform: rotate(10deg);
+    	transform: rotateY(180deg);
+    	left: 92%
+    }
+    40% {
+      left: 90%;
+    }
+    70%{
+
+    	left: 18%;
+    }
+    80% {
+     left:  10%;
+    }
+    100% {
+    	transform: rotateY(180deg);
+     left: 12%;
+    }
+
+}
+/*@keyframes goEat {
+	0%{
+     left: initial;
+	}
+	25%{
+     left: 590px;
+	}
+	50%{
+	 left: 590px;
+
+	}
+	75%{
+     left: 590px;
+	}
+	100%{
+     left: $position.left;
+	}
+}*/
+
+.PetEat {
+	position: relative;
+	animation-name: goEat;
+	animation: 15s;
+	animation-iteration-count: 1;
+
+}
+
+
+.AlvAwk {
+	position: relative;
+	animation-name: AlvAwkAni;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+.dead {
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+
+}
+
+
+div.house {
+	position: absolute;
+	background: center;
+	background-image: url('../tommyBackground2.jpeg');
+	height: 100%;
+	width: 100%;
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#night{
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-size: auto;
+	justify-content: center;
 }
