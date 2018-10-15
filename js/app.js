@@ -156,6 +156,7 @@ const mew = new Tamagatchi(1, 1, 1);
 //fuction that calls the functions that further invitable death
 const ownerStuff = (obj) =>{
 $('#feed').on("click", () =>{
+	// Always be sure to remove any commented out/non-functioning code from your master branch
   //let $position = $('#tommy').position();
   //$('#tommy').switchClass("AlvAwk", "PetEat", [14000])
 
@@ -191,3 +192,5 @@ $('#pet').text(`name: ${petName}`)
 }
 
 init(mew);
+
+// Your indentation / style looks amazing! Keep up the good work Colin 
